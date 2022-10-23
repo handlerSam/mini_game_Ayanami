@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.ayanami">
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/icon"
+        android:supportsRtl="true"
+        android:persistent="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver android:name=".WidgetProvider" android:enabled="true" android:exported="true">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="com.example.REFRESH_WIDGET" />
+                <action android:name="com.example.REFRESH_HEAD"/>
+                <action android:name="com.example.REFRESH_BODY"/>
+                <action android:name="com.example.MAP0_0"/>
+                <action android:name="com.example.MAP0_1"/>
+                <action android:name="com.example.MAP0_2"/>
+                <action android:name="com.example.MAP0_3"/>
+                <action android:name="com.example.MAP0_4"/>
+                <action android:name="com.example.MAP0_5"/>
+                <action android:name="com.example.MAP0_6"/>
+                <action android:name="com.example.MAP0_7"/>
+                <action android:name="com.example.MAP0_8"/>
+                <action android:name="com.example.MAP0_9"/>
+                <action android:name="com.example.MAP1_0"/>
+                <action android:name="com.example.MAP1_1"/>
+                <action android:name="com.example.MAP1_2"/>
+                <action android:name="com.example.MAP1_3"/>
+                <action android:name="com.example.MAP1_4"/>
+                <action android:name="com.example.MAP1_5"/>
+                <action android:name="com.example.MAP1_6"/>
+                <action android:name="com.example.MAP1_7"/>
+                <action android:name="com.example.MAP1_8"/>
+                <action android:name="com.example.MAP1_9"/>
+                <action android:name="com.example.MAP2_0"/>
+                <action android:name="com.example.MAP2_1"/>
+                <action android:name="com.example.MAP2_2"/>
+                <action android:name="com.example.MAP2_3"/>
+                <action android:name="com.example.MAP2_4"/>
+                <action android:name="com.example.MAP2_5"/>
+                <action android:name="com.example.MAP2_6"/>
+                <action android:name="com.example.MAP2_7"/>
+                <action android:name="com.example.MAP2_8"/>
+                <action android:name="com.example.MAP2_9"/>
+                <action android:name="com.example.MAP3_0"/>
+                <action android:name="com.example.MAP3_1"/>
+                <action android:name="com.example.MAP3_2"/>
+                <action android:name="com.example.MAP3_3"/>
+                <action android:name="com.example.MAP3_4"/>
+                <action android:name="com.example.MAP3_5"/>
+                <action android:name="com.example.MAP3_6"/>
+                <action android:name="com.example.MAP3_7"/>
+                <action android:name="com.example.MAP3_8"/>
+                <action android:name="com.example.MAP3_9"/>
+                <action android:name="com.example.MAP4_0"/>
+                <action android:name="com.example.MAP4_1"/>
+                <action android:name="com.example.MAP4_2"/>
+                <action android:name="com.example.MAP4_3"/>
+                <action android:name="com.example.MAP4_4"/>
+                <action android:name="com.example.MAP4_5"/>
+                <action android:name="com.example.MAP4_6"/>
+                <action android:name="com.example.MAP4_7"/>
+                <action android:name="com.example.MAP4_8"/>
+                <action android:name="com.example.MAP4_9"/>
+                <action android:name="com.example.MAP5_0"/>
+                <action android:name="com.example.MAP5_1"/>
+                <action android:name="com.example.MAP5_2"/>
+                <action android:name="com.example.MAP5_3"/>
+                <action android:name="com.example.MAP5_4"/>
+                <action android:name="com.example.MAP5_5"/>
+                <action android:name="com.example.MAP5_6"/>
+                <action android:name="com.example.MAP5_7"/>
+                <action android:name="com.example.MAP5_8"/>
+                <action android:name="com.example.MAP5_9"/>
+                <action android:name="com.example.MAP6_0"/>
+                <action android:name="com.example.MAP6_1"/>
+                <action android:name="com.example.MAP6_2"/>
+                <action android:name="com.example.MAP6_3"/>
+                <action android:name="com.example.MAP6_4"/>
+                <action android:name="com.example.MAP6_5"/>
+                <action android:name="com.example.MAP6_6"/>
+                <action android:name="com.example.MAP6_7"/>
+                <action android:name="com.example.MAP6_8"/>
+                <action android:name="com.example.MAP6_9"/>
+                <action android:name="com.example.MAP7_0"/>
+                <action android:name="com.example.MAP7_1"/>
+                <action android:name="com.example.MAP7_2"/>
+                <action android:name="com.example.MAP7_3"/>
+                <action android:name="com.example.MAP7_4"/>
+                <action android:name="com.example.MAP7_5"/>
+                <action android:name="com.example.MAP7_6"/>
+                <action android:name="com.example.MAP7_7"/>
+                <action android:name="com.example.MAP7_8"/>
+                <action android:name="com.example.MAP7_9"/>
+                <action android:name="com.example.MAP8_0"/>
+                <action android:name="com.example.MAP8_1"/>
+                <action android:name="com.example.MAP8_2"/>
+                <action android:name="com.example.MAP8_3"/>
+                <action android:name="com.example.MAP8_4"/>
+                <action android:name="com.example.MAP8_5"/>
+                <action android:name="com.example.MAP8_6"/>
+                <action android:name="com.example.MAP8_7"/>
+                <action android:name="com.example.MAP8_8"/>
+                <action android:name="com.example.MAP8_9"/>
+                <action android:name="com.example.MAP9_0"/>
+                <action android:name="com.example.MAP9_1"/>
+                <action android:name="com.example.MAP9_2"/>
+                <action android:name="com.example.MAP9_3"/>
+                <action android:name="com.example.MAP9_4"/>
+                <action android:name="com.example.MAP9_5"/>
+                <action android:name="com.example.MAP9_6"/>
+                <action android:name="com.example.MAP9_7"/>
+                <action android:name="com.example.MAP9_8"/>
+                <action android:name="com.example.MAP9_9"/>
+                <action android:name="com.example.FLODMAP"/>
+                <action android:name="com.example.UNFLODMAP"/>
+                <action android:name="com.example.RESTART"/>
+                <action android:name="com.example.CHOOSEDESTROYER"/>
+                <action android:name="com.example.CHOOSEBATTLESHIP"/>
+                <action android:name="com.example.AIRCRAFTCARRIER"/>
+                <action android:name="com.example.CHANGEORIENTATION"/>
+                <action android:name="com.example.CLICKSING"/>
+                <action android:name="com.example.CLICKUNFOLDMAP"/>
+                <action android:name="com.example.AIINITIATIVE"/>
+                <action android:name="com.example.PLAYERINITIATIVE"/>
+                <action android:name="com.example.LOAD"/>
+                <action android:name="com.example.SAVE"/>
+                <action android:name="com.example.CONFIRMYES"/>
+                <action android:name="com.example.CONFIRMNO"/>
+                <action android:name="com.example.SAVE01"/>
+                <action android:name="com.example.SAVE02"/>
+                <action android:name="com.example.SAVE03"/>
+                <action android:name="com.example.SAVE04"/>
+                <action android:name="com.example.SAVE05"/>
+                <action android:name="com.example.SAVE06"/>
+                <action android:name="com.example.SAVE07"/>
+                <action android:name="com.example.SAVE08"/>
+                <action android:name="com.example.SAVE09"/>
+                <action android:name="com.example.UNFOLDTREASUREMAP"/>
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widgetconfig" />
+        </receiver>
+
+        <service android:name=".MyService" >
+        </service>
+    </application>
+
+</manifest>
